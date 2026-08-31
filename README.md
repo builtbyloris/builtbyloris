@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=27&duration=3000&pause=1200&center=true&vCenter=true&width=800&lines=git+commit+-m+%22Welcome+to+builtbyloris%22;Learning+by+building.;Turning+study+into+practical+projects." alt="Typing SVG"
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=27&duration=3000&pause=1200&center=true&vCenter=true&width=800&lines=git+commit+-m+%22Welcome+to+builtbyloris%22;learning+by+building.;turning+study+into+practical+projects." alt="Typing SVG"
 />
 
 ### 🧑🏻‍💻 Project & Innovation Management Student
