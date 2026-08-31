@@ -103,18 +103,6 @@ Add 2–3 selected repositories here once you have projects you want to highligh
 
 <div align="center">
 
-## 🔁 Learning Journey
-
-<kbd>LEARN</kbd> → <kbd>BUILD</kbd> → <kbd>ANALYZE</kbd> → <kbd>IMPROVE</kbd> → <kbd>REPEAT</kbd>
-
-<sub>Study the concept · Build something practical · Analyze the result · Improve the process</sub>
-
-</div>
-
----
-
-<div align="center">
-
 ### `builtbyloris`
 
 **Learning. Building. Improving.**
