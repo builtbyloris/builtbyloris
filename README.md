@@ -11,7 +11,7 @@ Building practical skills in **data analysis, technology and AI** through hands-
 <br>
 
 <a href="https://github.com/builtbyloris?tab=repositories">
-  <img src="https://img.shields.io/badge/Explore_My_Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore my projects">
+  <img src="https://img.shields.io/badge/See_What_I'm_Building-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore my projects">
 </a>
 
 <a href="https://www.linkedin.com/in/loris-sagristano-b31237397">
