@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hi, I'm Loris
+# 🧑🏻‍💻 Hi, I'm Loris
 
 ### Data Analysis · Project Management
 
