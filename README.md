@@ -44,10 +44,8 @@ This GitHub is where I document that learning process.
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square\&logo=microsoftexcel\&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square\&logo=visualstudiocode\&logoColor=white)
 
 </td>
 </tr>
@@ -56,14 +54,10 @@ This GitHub is where I document that learning process.
 <td valign="top"><strong>Currently Learning</strong><br><sub>Skills I'm actively developing</sub></td>
 <td valign="top">
 
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square)
-![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=flat-square)
-![EDA](https://img.shields.io/badge/EDA-Exploratory_Data_Analysis-555555?style=flat-square)
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square)
-![Statistics](https://img.shields.io/badge/Statistics_%26_Probability-555555?style=flat-square)
-![Power Query](https://img.shields.io/badge/Power_Query-F2C811?style=flat-square\&logo=powerbi\&logoColor=black)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square\&logo=powerbi\&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square\&logo=tableau\&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Data%20Analysis-555555?style=flat-square)
+![EDA](https://img.shields.io/badge/EDA-Exploratory%20Data%20Analysis-555555?style=flat-square)
+![Data Visualization](https://img.shields.io/badge/Data%20Visualization-11557C?style=flat-square)
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 
 </td>
 </tr>
