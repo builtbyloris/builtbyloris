@@ -92,7 +92,7 @@ The goal is simple: **move beyond theory by building, analyzing and improving re
 Future Featured Projects section:
 Add 2–3 selected repositories here once you have projects you want to highlight.
 -->
-``html
+
 ## 📊 GitHub Stats
 
 <p align="center">
@@ -102,15 +102,6 @@ Add 2–3 selected repositories here once you have projects you want to highligh
     alt="GitHub Contribution Snake"
   />
 </p>
-
-<p align="center">
-  <img
-    src="./profile-3d-contrib/profile-night-rainbow.svg"
-    width="90%"
-    alt="GitHub 3D Contribution Graph"
-  />
-</p>
----
 
 <div align="center">
 
