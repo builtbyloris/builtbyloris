@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="452" viewBox="0 0 560 452" role="img" aria-labelledby="title desc">
+  <title id="title">Messages from Loris</title>
+  <desc id="desc">An animated sequence of chat bubbles introducing Loris and linking to LinkedIn and GitHub repositories.</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bubble { fill: #e9e9eb; }
+    .message { fill: #242424; font: 17px -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; letter-spacing: -.25px; }
+    .link { fill: #0878e8; text-decoration: underline; }
+    .typing-dot { fill: #777; }
+    @media (prefers-color-scheme: dark) {
+      .bubble { fill: #343438; }
+      .message { fill: #f1f1f1; }
+      .link { fill: #64aaff; }
+      .typing-dot { fill: #aaa; }
+    }
+    .typing { opacity: 0; animation: typing 1.15s ease-in-out both; }
+    .msg { opacity: 0; animation: appear .28s ease-out both; }
+    .t1 { animation-delay: 0.15s; }
+    .m1 { animation-delay: 1.30s; }
+    .t2 { animation-delay: 2.05s; }
+    .m2 { animation-delay: 3.20s; }
+    .t3 { animation-delay: 3.95s; }
+    .m3 { animation-delay: 5.10s; }
+    .t4 { animation-delay: 5.85s; }
+    .m4 { animation-delay: 7.00s; }
+    .t5 { animation-delay: 7.75s; }
+    .m5 { animation-delay: 8.90s; }
+    .t6 { animation-delay: 9.65s; }
+    .m6 { animation-delay: 10.80s; }
+    @keyframes typing {
+      0%, 100% { opacity: 0; }
+      18%, 82% { opacity: 1; }
+    }
+    @keyframes appear {
+      from { opacity: 0; transform: translate(0, 7px); }
+      to { opacity: 1; transform: translate(0, 0); }
+    }
+  </style>
+
+  <!-- Message 1 -->
+  <g class="typing t1" transform="translate(18 8)">
+    <rect class="bubble" width="76" height="42" rx="20"/>
+    <circle class="typing-dot" cx="27" cy="21" r="4"/><circle class="typing-dot" cx="39" cy="21" r="4"/><circle class="typing-dot" cx="51" cy="21" r="4"/>
+  </g>
+  <g class="msg m1" transform="translate(18 8)">
+    <rect class="bubble" width="154" height="46" rx="18"/>
+    <text class="message" x="17" y="29">Hi, I'm Loris</text>
+  </g>
+
+  <!-- Message 2 -->
+  <g class="typing t2" transform="translate(18 66)">
+    <rect class="bubble" width="76" height="42" rx="20"/>
+    <circle class="typing-dot" cx="27" cy="21" r="4"/><circle class="typing-dot" cx="39" cy="21" r="4"/><circle class="typing-dot" cx="51" cy="21" r="4"/>
+  </g>
+  <g class="msg m2" transform="translate(18 66)">
+    <rect class="bubble" width="355" height="70" rx="18"/>
+    <text class="message" x="17" y="29">I live in Italy, where coffee ☕ is</text>
+    <text class="message" x="17" y="53">basically a personality trait.</text>
+  </g>
+
+  <!-- Message 3 -->
+  <g class="typing t3" transform="translate(18 148)">
+    <rect class="bubble" width="76" height="42" rx="20"/>
+    <circle class="typing-dot" cx="27" cy="21" r="4"/><circle class="typing-dot" cx="39" cy="21" r="4"/><circle class="typing-dot" cx="51" cy="21" r="4"/>
+  </g>
+  <g class="msg m3" transform="translate(18 148)">
+    <rect class="bubble" width="374" height="70" rx="18"/>
+    <text class="message" x="17" y="29">I'm a Project &amp; Innovation Management</text>
+    <text class="message" x="17" y="53">student, getting into Data Analytics.</text>
+  </g>
+
+  <!-- Message 4 -->
+  <g class="typing t4" transform="translate(18 230)">
+    <rect class="bubble" width="76" height="42" rx="20"/>
+    <circle class="typing-dot" cx="27" cy="21" r="4"/><circle class="typing-dot" cx="39" cy="21" r="4"/><circle class="typing-dot" cx="51" cy="21" r="4"/>
+  </g>
+  <g class="msg m4" transform="translate(18 230)">
+    <rect class="bubble" width="420" height="70" rx="18"/>
+    <text class="message" x="17" y="29">You can find me on LinkedIn at</text>
+    <a href="https://www.linkedin.com/in/loris-sagristano-b31237397" target="_blank">
+      <text class="message link" x="17" y="53">linkedin.com/in/loris-sagristano-b31237397</text>
+    </a>
+  </g>
+
+  <!-- Message 5 -->
+  <g class="typing t5" transform="translate(18 312)">
+    <rect class="bubble" width="76" height="42" rx="20"/>
+    <circle class="typing-dot" cx="27" cy="21" r="4"/><circle class="typing-dot" cx="39" cy="21" r="4"/><circle class="typing-dot" cx="51" cy="21" r="4"/>
+  </g>
+  <g class="msg m5" transform="translate(18 312)">
+    <rect class="bubble" width="365" height="70" rx="18"/>
+    <text class="message" x="17" y="29">And my GitHub repositories are here:</text>
+    <a href="https://github.com/builtbyloris" target="_blank">
+      <text class="message link" x="17" y="53">github.com/builtbyloris</text>
+    </a>
+  </g>
+
+  <!-- Message 6 -->
+  <g class="typing t6" transform="translate(18 394)">
+    <rect class="bubble" width="76" height="42" rx="20"/>
+    <circle class="typing-dot" cx="27" cy="21" r="4"/><circle class="typing-dot" cx="39" cy="21" r="4"/><circle class="typing-dot" cx="51" cy="21" r="4"/>
+  </g>
+  <g class="msg m6" transform="translate(18 394)">
+    <rect class="bubble" width="263" height="46" rx="18"/>
+    <text class="message" x="17" y="29">Have a great Thursday! ✌️</text>
+  </g>
+
+</svg>
