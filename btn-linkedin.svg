@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="60" viewBox="0 0 220 60" role="img" aria-label="LinkedIn: check-in">
+  <title>LinkedIn: check-in</title>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg-li { fill: #0a66c2; }
+    .bg-repo { fill: #1f2328; }
+    .fg { fill: #ffffff; }
+    .perf { stroke: #ffffff; stroke-opacity: .55; }
+    @media (prefers-color-scheme: dark) {
+      .bg-li { fill: #1f6feb; }
+      .bg-repo { fill: #e6edf3; }
+      .bg-repo ~ .fg, .fg-repo { fill: #0d1117; }
+      .perf-repo { stroke: #0d1117; stroke-opacity: .45; }
+    }
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+    .cap { font: 700 9.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1.8px; opacity: .8; }
+    .big { font-size: 18px; font-weight: 700; letter-spacing: -.2px; }
+  </style>
+  <path class="bg-li" d="M12,0 H208 A12,12 0 0 1 220,12 V22 A8,8 0 0 0 220,38 V48 A12,12 0 0 1 208,60 H12 A12,12 0 0 1 0,48 V38 A8,8 0 0 0 0,22 V12 A12,12 0 0 1 12,0 Z"/>
+  <line class="perf" x1="172" y1="10" x2="172" y2="50" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <text class="fg cap" x="20" y="25">CHECK-IN</text>
+  <text class="fg big" x="20" y="45">LinkedIn</text>
+  <g transform="translate(196 30) rotate(-45)"><path class="fg" d="M14 0 L6 -2.5 L-2 -11 L-5 -11 L-1 -2 L-9 -1.5 L-12 -5 L-14.5 -5 L-12.5 0 L-14.5 5 L-12 5 L-9 1.5 L-1 2 L-5 11 L-2 11 L6 2.5 Z" transform="scale(.7)"/></g>
+</svg>
