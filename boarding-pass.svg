@@ -1,11 +1,18 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="336" viewBox="0 0 720 336" role="img" aria-labelledby="title desc">
+
   <title id="title">Boarding pass: Loris Sagristano</title>
-  <desc id="desc">A boarding pass from Project Management to Data and Machine Learning. Passenger: Sagristano, Loris. Mission: run projects, learn to wrangle data and find the idea of the century to revolutionize the planet.</desc>
+  <desc id="desc">A boarding pass representing the journey from Project Management to Data Analytics and Machine Learning.</desc>
+
   <defs>
-    <clipPath id="shape"><path d="M16,0 H508 A12,12 0 0 0 532,0 H704 A16,16 0 0 1 720,16 V320 A16,16 0 0 1 704,336 H532 A12,12 0 0 0 508,336 H16 A16,16 0 0 1 0,320 V16 A16,16 0 0 1 16,0 Z"/></clipPath>
+    <clipPath id="shape">
+      <path d="M16,0 H508 A12,12 0 0 0 532,0 H704 A16,16 0 0 1 720,16 V320 A16,16 0 0 1 704,336 H532 A12,12 0 0 0 508,336 H16 A16,16 0 0 1 0,320 V16 A16,16 0 0 1 16,0 Z"/>
+    </clipPath>
   </defs>
+
   <style>
     :root { color-scheme: light dark; }
+
     .paper { fill: #ffffff; stroke: #d0d7de; stroke-width: 1.5; }
     .band { fill: #0969da; }
     .accent { fill: #0969da; }
@@ -15,6 +22,7 @@
     .ink { fill: #1f2328; }
     .muted { fill: #656d76; }
     .ring { fill: none; stroke: #8c959f; stroke-width: 1.5; }
+
     @media (prefers-color-scheme: dark) {
       .paper { fill: #161b22; stroke: #30363d; }
       .band { fill: #1f6feb; }
@@ -26,13 +34,35 @@
       .muted { fill: #8b949e; }
       .ring { stroke: #6e7681; }
     }
-    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .label { font-size: 10px; letter-spacing: 1.6px; }
+
+    text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .label {
+      font-size: 10px;
+      letter-spacing: 1.6px;
+    }
+
     .white { fill: #ffffff; }
-    .dash { stroke-dasharray: 5 6; animation: flow 1.2s linear infinite; }
-    .fly { animation: fly 5s ease-in-out infinite; }
-    @keyframes flow { to { stroke-dashoffset: -22; } }
+
+    .dash {
+      stroke-dasharray: 5 6;
+      animation: flow 1.2s linear infinite;
+    }
+
+    .fly {
+      animation: fly 5s ease-in-out infinite;
+    }
+
+    @keyframes flow {
+      to { stroke-dashoffset: -22; }
+    }
+
     @keyframes fly {
       0%   { transform: translate(0, 0); opacity: 0; }
       10%  { opacity: 1; }
@@ -41,53 +71,59 @@
     }
   </style>
 
-  <!-- sagoma biglietto -->
+  <!-- Ticket shape -->
   <path class="paper" d="M16,0 H508 A12,12 0 0 0 532,0 H704 A16,16 0 0 1 720,16 V320 A16,16 0 0 1 704,336 H532 A12,12 0 0 0 508,336 H16 A16,16 0 0 1 0,320 V16 A16,16 0 0 1 16,0 Z"/>
+
   <g clip-path="url(#shape)">
     <rect class="band" x="0" y="0" width="720" height="52"/>
   </g>
+
   <line class="rule" x1="520" y1="16" x2="520" y2="320" stroke-dasharray="4 5"/>
 
-  <!-- intestazione -->
-  <text class="mono white label" x="28" y="31" font-size="12" font-weight="700" style="font-size:12px;letter-spacing:2.2px">BUILTBYLORIS AIRWAYS</text>
+  <!-- Header -->
+  <text class="mono white label" x="28" y="31" style="font-size:12px;letter-spacing:2.2px;font-weight:700">BUILTBYLORIS</text>
   <text class="mono white label" x="496" y="31" text-anchor="end" style="font-size:12px;letter-spacing:2.2px">BOARDING PASS</text>
   <text class="mono white label" x="544" y="31" style="font-size:12px;letter-spacing:2.2px">ADMIT ONE</text>
 
-  <!-- passeggero -->
+  <!-- Passenger -->
   <text class="mono muted label" x="28" y="82">PASSENGER</text>
-  <text class="mono ink" x="28" y="110" style="font-size:26px;font-weight:700;letter-spacing:.5px">SAGRISTANO / LORIS</text>
+  <text class="mono ink" x="28" y="110" style="font-size:26px;font-weight:700;letter-spacing:.5px">SAGRISTANO LORIS</text>
 
-  <!-- tratta -->
+  <!-- Journey -->
   <text class="mono accent" x="28" y="168" style="font-size:44px;font-weight:700">PM</text>
   <text class="mono accent" x="496" y="168" text-anchor="end" style="font-size:44px;font-weight:700">ML</text>
+
   <circle class="ring" cx="104" cy="150" r="3.5"/>
   <circle class="ring" cx="424" cy="150" r="3.5"/>
+
   <line class="flight dash" x1="112" y1="150" x2="416" y2="150" stroke-width="1.5"/>
-  <g transform="translate(118 150)"><g class="fly"><path class="accent" d="M14 0 L6 -2.5 L-2 -11 L-5 -11 L-1 -2 L-9 -1.5 L-12 -5 L-14.5 -5 L-12.5 0 L-14.5 5 L-12 5 L-9 1.5 L-1 2 L-5 11 L-2 11 L6 2.5 Z"/></g></g>
+
+  <g transform="translate(118 150)">
+    <g class="fly">
+      <path class="accent" d="M14 0 L6 -2.5 L-2 -11 L-5 -11 L-1 -2 L-9 -1.5 L-12 -5 L-14.5 -5 L-12.5 0 L-14.5 5 L-12 5 L-9 1.5 L-1 2 L-5 11 L-2 11 L6 2.5 Z"/>
+    </g>
+  </g>
+
   <text class="mono muted label" x="28" y="190">PROJECT MANAGEMENT</text>
   <text class="mono muted label" x="496" y="190" text-anchor="end">DATA &amp; MACHINE LEARNING</text>
 
   <line class="rule" x1="28" y1="208" x2="492" y2="208" stroke-dasharray="4 5"/>
 
-  <!-- dati -->
+  <!-- Personal information -->
   <text class="mono muted label" x="28" y="232">OCCUPATION</text>
   <text class="ink" x="28" y="252" style="font-size:14px;font-weight:600">Student · Project Management</text>
+
   <text class="mono muted label" x="262" y="232">PASSION</text>
   <text class="ink" x="262" y="252" style="font-size:14px;font-weight:600">Data analysis · Machine learning</text>
 
-  <text class="mono muted label" x="28" y="282">MISSION</text>
-  <text class="ink" x="28" y="302" style="font-size:13.5px">Run projects, learn to wrangle data, and find the idea</text>
-  <text class="ink" x="28" y="321" style="font-size:13.5px">of the century to revolutionize the planet. ETA: unknown.</text>
+  <!-- Right ticket -->
+  <text class="mono muted label" x="544" y="100">ABOUT ME</text>
+  <text class="mono accent" x="544" y="132" style="font-size:19px;font-weight:700">BUILTBYLORIS</text>
 
-  <!-- talloncino -->
-  <text class="mono muted label" x="544" y="82">PASSENGER</text>
-  <text class="mono ink" x="544" y="102" style="font-size:13px;font-weight:700">SAGRISTANO L.</text>
-  <text class="mono muted label" x="544" y="132">FROM → TO</text>
-  <text class="mono accent" x="544" y="158" style="font-size:24px;font-weight:700">PM → ML</text>
-  <text class="mono muted label" x="544" y="188">SEAT</text>
-  <text class="mono ink" x="544" y="210" style="font-size:18px;font-weight:700">1A</text>
-  <text class="mono muted label" x="628" y="188">GATE</text>
-  <text class="mono ink" x="628" y="210" style="font-size:18px;font-weight:700">B2</text>
+  <line class="rule" x1="544" y1="154" x2="692" y2="154" stroke-dasharray="3 4"/>
+
+
+  <!-- Barcode -->
   <g class="bars">
     <rect x="544.0" y="236" width="1.5" height="58"/>
     <rect x="548.5" y="236" width="1.5" height="58"/>
@@ -119,5 +155,7 @@
     <rect x="682.0" y="236" width="5" height="58"/>
     <rect x="689.0" y="236" width="3.5" height="58"/>
   </g>
-  <text class="mono muted" x="544" y="318" style="font-size:9px;letter-spacing:1.5px">LS-2026-PM-ML</text>
+
+  <text class="mono muted" x="544" y="318" style="font-size:9px;letter-spacing:1.5px">LX-84K9-27Q</text>
+
 </svg>
