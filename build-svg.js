@@ -3,9 +3,10 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const CONFIG = {
-  // Coordinate usate SOLO per il meteo nel secondo messaggio: cambiale con le tue.
-  lat: 45.4642,
-  lon: 9.19,
+  place: "Vercelli, Italy", // testo mostrato nel secondo messaggio
+  // Coordinate usate SOLO per il meteo del secondo messaggio.
+  lat: 45.32,
+  lon: 8.42,
   timezone: "Europe/Rome",
   linkedin: "https://www.linkedin.com/in/loris-sagristano-b31237397",
   github: "https://github.com/builtbyloris",
@@ -55,13 +56,13 @@ async function getMessages() {
     { text: "Hi, I'm Loris" },
     {
       text: w
-        ? `I live in Italy where it's supposed to be ${w.c}° C (${w.f}° F) and ${w.emoji} today.`
-        : "I live in Italy, where coffee ☕ is basically a personality trait.",
+        ? `I live in ${CONFIG.place} where it's supposed to be ${w.c}° C (${w.f}° F) and ${w.emoji} today.`
+        : `I live in ${CONFIG.place}.`,
     },
     { text: "I'm a Project & Innovation Management student, getting into Data Analytics." },
     {
       text: "You can find me on LinkedIn at",
-      link: { label: "linkedin.com/in/loris-sagristano-b31237397", href: CONFIG.linkedin },
+      link: { label: "linkedin.com/in/loris-sagristano", href: CONFIG.linkedin },
     },
     {
       text: "And my GitHub repositories are here:",
@@ -128,10 +129,10 @@ function render(messages) {
 
     out.push(`  <!-- Message ${i} -->`);
     out.push(
-      `  <g class="typing t${i}" transform="translate(18 ${y})">\n    <rect class="bubble" width="76" height="42" rx="20"/>\n    ${DOTS}\n  </g>`
+      `  <g transform="translate(18 ${y})">\n    <g class="typing t${i}">\n      <rect class="bubble" width="76" height="42" rx="20"/>\n      ${DOTS}\n    </g>\n  </g>`
     );
     out.push(
-      `  <g class="msg m${i}" transform="translate(18 ${y})">\n    <rect class="bubble" width="${w}" height="${h}" rx="18"/>\n    ${texts.join("\n    ")}\n  </g>\n`
+      `  <g transform="translate(18 ${y})">\n    <g class="msg m${i}">\n      <rect class="bubble" width="${w}" height="${h}" rx="18"/>\n      ${texts.join("\n      ")}\n    </g>\n  </g>\n`
     );
     y += h + GAP;
   });
