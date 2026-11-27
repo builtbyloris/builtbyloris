@@ -116,14 +116,21 @@
   <text class="mono muted label" x="28" y="82">PASSENGER</text>
   <text class="mono ink" x="28" y="110" style="font-size:26px;font-weight:700;letter-spacing:.5px">SAGRISTANO LORIS</text>
 
-  <!-- Journey -->
-  <text class="mono accent" x="28" y="168" style="font-size:44px;font-weight:700">PM</text>
-  <text class="mono accent" x="496" y="168" text-anchor="end" style="font-size:44px;font-weight:700">ML</text>
+<!-- Journey -->
+<text class="mono accent" x="28" y="168"
+      style="font-size:44px;font-weight:700">V1</text>
 
-  <circle class="ring" cx="104" cy="150" r="3.5"/>
-  <circle class="ring" cx="424" cy="150" r="3.5"/>
+<text class="mono accent" x="496" y="168"
+      text-anchor="end"
+      style="font-size:44px;font-weight:700">V2</text>
 
-  <line class="flight dash" x1="112" y1="150" x2="416" y2="150" stroke-width="1.5"/>
+<circle class="ring" cx="104" cy="150" r="3.5"/>
+<circle class="ring" cx="424" cy="150" r="3.5"/>
+
+<line class="flight dash"
+      x1="112" y1="150"
+      x2="416" y2="150"
+      stroke-width="1.5"/>
 
 
 <!-- Animated airplane -->
@@ -197,11 +204,10 @@
   <text class="ink" x="544" y="116" style="font-family:Georgia,serif;font-size:16px;font-style:italic">A journey of</text>
   <text class="ink" x="544" y="135" style="font-family:Georgia,serif;font-size:16px;font-style:italic">curiosity.</text>
 
-  <text class="muted" x="544" y="161" style="font-size:9px">From manufacturing to</text>
-  <text class="muted" x="544" y="175" style="font-size:9px">the world of data and</text>
-  <text class="muted" x="544" y="189" style="font-size:9px">technology. Exploring,</text>
-  <text class="muted" x="544" y="203" style="font-size:9px">learning and building</text>
-  <text class="muted" x="544" y="217" style="font-size:9px">something meaningful.</text>
+<text class="muted" x="544" y="161" style="font-size:9px">Currently under</text>
+<text class="muted" x="544" y="175" style="font-size:9px">development.</text>
+<text class="muted" x="544" y="196" style="font-size:9px">Better things are</text>
+<text class="muted" x="544" y="210" style="font-size:9px">coming.</text>
 
   <line class="rule" x1="544" y1="231" x2="692" y2="231" stroke-dasharray="3 4"/>
 
