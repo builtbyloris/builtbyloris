@@ -13,6 +13,7 @@
   <style>
     :root { color-scheme: light dark; }
 
+    /* Colors */
     .paper { fill: #ffffff; stroke: #d0d7de; stroke-width: 1.5; }
     .band { fill: #0969da; }
     .accent { fill: #0969da; }
@@ -23,6 +24,7 @@
     .muted { fill: #656d76; }
     .ring { fill: none; stroke: #8c959f; stroke-width: 1.5; }
 
+    /* Dark mode */
     @media (prefers-color-scheme: dark) {
       .paper { fill: #161b22; stroke: #30363d; }
       .band { fill: #1f6feb; }
@@ -35,6 +37,7 @@
       .ring { stroke: #6e7681; }
     }
 
+    /* Typography */
     text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     }
@@ -50,24 +53,47 @@
 
     .white { fill: #ffffff; }
 
+    /* Route animation */
     .dash {
       stroke-dasharray: 5 6;
       animation: flow 1.2s linear infinite;
     }
 
+    /* Plane animation */
     .fly {
-      animation: fly 5s ease-in-out infinite;
+      animation: fly 5s linear infinite;
     }
 
+    /* Keyframes */
     @keyframes flow {
       to { stroke-dashoffset: -22; }
     }
 
     @keyframes fly {
-      0%   { transform: translate(0, 0); opacity: 0; }
-      10%  { opacity: 1; }
-      90%  { opacity: 1; }
-      100% { transform: translate(300px, 0); opacity: 0; }
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+
+      8% {
+        opacity: 1;
+      }
+
+      92% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(300px);
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dash,
+      .fly {
+        animation: none;
+      }
     }
   </style>
 
@@ -78,6 +104,7 @@
     <rect class="band" x="0" y="0" width="720" height="52"/>
   </g>
 
+  <!-- Detachable line -->
   <line class="rule" x1="520" y1="16" x2="520" y2="320" stroke-dasharray="4 5"/>
 
   <!-- Header -->
@@ -98,12 +125,60 @@
 
   <line class="flight dash" x1="112" y1="150" x2="416" y2="150" stroke-width="1.5"/>
 
-  <g transform="translate(118 150)">
-    <g class="fly">
-      <path class="accent" d="M14 0 L6 -2.5 L-2 -11 L-5 -11 L-1 -2 L-9 -1.5 L-12 -5 L-14.5 -5 L-12.5 0 L-14.5 5 L-12 5 L-9 1.5 L-1 2 L-5 11 L-2 11 L6 2.5 Z"/>
-    </g>
-  </g>
 
+<!-- Animated airplane -->
+<g transform="translate(118 150)">
+  <g class="fly">
+
+    <!-- Main wings -->
+    <path class="accent"
+          d="M-3 -2
+             L-11 -13
+             Q-13 -16 -10 -16
+             L-5 -15
+             L5 -3
+             L15 -2
+             Q18 -2 18 0
+             Q18 2 15 2
+             L5 3
+             L-5 15
+             L-10 16
+             Q-13 16 -11 13
+             Z"/>
+
+    <!-- Fuselage -->
+    <path class="accent"
+          d="M-20 0
+             Q-19 -2 -14 -2
+             L13 -2
+             Q19 -1 22 0
+             Q19 1 13 2
+             L-14 2
+             Q-19 2 -20 0Z"/>
+
+    <!-- Tail wings -->
+    <path class="accent"
+          d="M-14 -2
+             L-19 -8
+             L-16 -9
+             L-7 -2
+             Z"/>
+
+    <path class="accent"
+          d="M-14 2
+             L-19 8
+             L-16 9
+             L-7 2
+             Z"/>
+
+    <!-- Cockpit -->
+    <path d="M17 -0.8 L21 0 L17 0.8Z"
+          fill="#ffffff"/>
+
+  </g>
+</g>
+
+  <!-- Journey labels -->
   <text class="mono muted label" x="28" y="190">PROJECT MANAGEMENT</text>
   <text class="mono muted label" x="496" y="190" text-anchor="end">DATA &amp; MACHINE LEARNING</text>
 
@@ -111,51 +186,58 @@
 
   <!-- Personal information -->
   <text class="mono muted label" x="28" y="232">OCCUPATION</text>
-  <text class="ink" x="28" y="252" style="font-size:14px;font-weight:600">Student · Project Management</text>
+  <text class="ink" x="28" y="258" style="font-size:13px;font-weight:600">Student Project Manager</text>
 
-  <text class="mono muted label" x="262" y="232">PASSION</text>
-  <text class="ink" x="262" y="252" style="font-size:14px;font-weight:600">Data analysis · Machine learning</text>
+  <text class="mono muted label" x="280" y="232">INTERESTS</text>
+  <text class="ink" x="280" y="258" style="font-size:12px;font-weight:600">Data Analysis | Machine Learning</text>
 
-  <!-- Right ticket -->
-  <text class="mono muted label" x="544" y="100">ABOUT ME</text>
-  <text class="mono accent" x="544" y="132" style="font-size:19px;font-weight:700">BUILTBYLORIS</text>
+  <!-- Right ticket: About Me -->
+  <text class="mono accent" x="544" y="88" style="font-size:10px;letter-spacing:2px;font-weight:700">ABOUT ME</text>
 
-  <line class="rule" x1="544" y1="154" x2="692" y2="154" stroke-dasharray="3 4"/>
+  <text class="ink" x="544" y="116" style="font-family:Georgia,serif;font-size:16px;font-style:italic">A journey of</text>
+  <text class="ink" x="544" y="135" style="font-family:Georgia,serif;font-size:16px;font-style:italic">curiosity.</text>
 
+  <text class="muted" x="544" y="161" style="font-size:9px">From manufacturing to</text>
+  <text class="muted" x="544" y="175" style="font-size:9px">the world of data and</text>
+  <text class="muted" x="544" y="189" style="font-size:9px">technology. Exploring,</text>
+  <text class="muted" x="544" y="203" style="font-size:9px">learning and building</text>
+  <text class="muted" x="544" y="217" style="font-size:9px">something meaningful.</text>
+
+  <line class="rule" x1="544" y1="231" x2="692" y2="231" stroke-dasharray="3 4"/>
 
   <!-- Barcode -->
   <g class="bars">
-    <rect x="544.0" y="236" width="1.5" height="58"/>
-    <rect x="548.5" y="236" width="1.5" height="58"/>
-    <rect x="552.0" y="236" width="5" height="58"/>
-    <rect x="560.0" y="236" width="1.5" height="58"/>
-    <rect x="563.0" y="236" width="3.5" height="58"/>
-    <rect x="568.0" y="236" width="5" height="58"/>
-    <rect x="576.0" y="236" width="1.5" height="58"/>
-    <rect x="580.5" y="236" width="3.5" height="58"/>
-    <rect x="585.5" y="236" width="3.5" height="58"/>
-    <rect x="592.0" y="236" width="1.5" height="58"/>
-    <rect x="596.5" y="236" width="1.5" height="58"/>
-    <rect x="601.0" y="236" width="1.5" height="58"/>
-    <rect x="604.0" y="236" width="1.5" height="58"/>
-    <rect x="607.0" y="236" width="5" height="58"/>
-    <rect x="614.0" y="236" width="3.5" height="58"/>
-    <rect x="619.5" y="236" width="1.5" height="58"/>
-    <rect x="624.0" y="236" width="1.5" height="58"/>
-    <rect x="627.0" y="236" width="2.5" height="58"/>
-    <rect x="632.5" y="236" width="5" height="58"/>
-    <rect x="639.0" y="236" width="5" height="58"/>
-    <rect x="645.5" y="236" width="1.5" height="58"/>
-    <rect x="649.0" y="236" width="5" height="58"/>
-    <rect x="657.0" y="236" width="5" height="58"/>
-    <rect x="664.0" y="236" width="2.5" height="58"/>
-    <rect x="669.5" y="236" width="3.5" height="58"/>
-    <rect x="675.0" y="236" width="1.5" height="58"/>
-    <rect x="678.0" y="236" width="2.5" height="58"/>
-    <rect x="682.0" y="236" width="5" height="58"/>
-    <rect x="689.0" y="236" width="3.5" height="58"/>
+    <rect x="544.0" y="242" width="1.5" height="48"/>
+    <rect x="548.5" y="242" width="1.5" height="48"/>
+    <rect x="552.0" y="242" width="5" height="48"/>
+    <rect x="560.0" y="242" width="1.5" height="48"/>
+    <rect x="563.0" y="242" width="3.5" height="48"/>
+    <rect x="568.0" y="242" width="5" height="48"/>
+    <rect x="576.0" y="242" width="1.5" height="48"/>
+    <rect x="580.5" y="242" width="3.5" height="48"/>
+    <rect x="585.5" y="242" width="3.5" height="48"/>
+    <rect x="592.0" y="242" width="1.5" height="48"/>
+    <rect x="596.5" y="242" width="1.5" height="48"/>
+    <rect x="601.0" y="242" width="1.5" height="48"/>
+    <rect x="604.0" y="242" width="1.5" height="48"/>
+    <rect x="607.0" y="242" width="5" height="48"/>
+    <rect x="614.0" y="242" width="3.5" height="48"/>
+    <rect x="619.5" y="242" width="1.5" height="48"/>
+    <rect x="624.0" y="242" width="1.5" height="48"/>
+    <rect x="627.0" y="242" width="2.5" height="48"/>
+    <rect x="632.5" y="242" width="5" height="48"/>
+    <rect x="639.0" y="242" width="5" height="48"/>
+    <rect x="645.5" y="242" width="1.5" height="48"/>
+    <rect x="649.0" y="242" width="5" height="48"/>
+    <rect x="657.0" y="242" width="5" height="48"/>
+    <rect x="664.0" y="242" width="2.5" height="48"/>
+    <rect x="669.5" y="242" width="3.5" height="48"/>
+    <rect x="675.0" y="242" width="1.5" height="48"/>
+    <rect x="678.0" y="242" width="2.5" height="48"/>
+    <rect x="682.0" y="242" width="5" height="48"/>
+    <rect x="689.0" y="242" width="3.5" height="48"/>
   </g>
 
-  <text class="mono muted" x="544" y="318" style="font-size:9px;letter-spacing:1.5px">LX-84K9-27Q</text>
+  <text class="mono muted" x="544" y="315" style="font-size:9px;letter-spacing:1.5px">LX-84K9-27Q</text>
 
 </svg>
